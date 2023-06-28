@@ -131,6 +131,7 @@ const Product = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const getProduct = async () => {
       try {
         const res = await publicRequest.get('/products/find/' + id);
